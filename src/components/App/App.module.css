@@ -1,0 +1,9 @@
+.container {
+  width: auto;
+}
+
+.keyboard {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
