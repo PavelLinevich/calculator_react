@@ -3,10 +3,9 @@
   margin: 3rem auto;
 }
 
-.keyboard {
+.calculator {
   display: flex;
   flex-direction: column;
-  justify-content: center;
   align-items: center;
   gap: 1rem;
 }
@@ -26,5 +25,16 @@
 .result {
   color: red;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
+}
+
+.keyboard {
+  display: flex;
+}
+
+.expressionBtn {
+  display: flex;
+  flex-direction: column;
+  padding-left: 0.5rem;
+  gap: 0.5rem;
 }
