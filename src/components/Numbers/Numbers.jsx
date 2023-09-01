@@ -1,4 +1,5 @@
 import React from 'react';
+import Equals from '../Equals/Equals';
 import styles from './Numbers.module.css';
 
 function Numbers(props) {
@@ -10,8 +11,8 @@ function Numbers(props) {
         <div
           onClick={(e) => {
             props.counts !== '0' ?
-              props.onClick(props.counts + e.target.innerHTML) :
-              props.onClick(e.target.innerHTML)
+              props.setCounts(props.counts + e.target.innerHTML) :
+              props.setCounts(e.target.innerHTML)
           }}
           className={styles.btn}
           key={number}>
@@ -22,8 +23,11 @@ function Numbers(props) {
   )
 
   return (
-    <div className={styles.btnBlock}>{numbers}</div>
-    
+    <div>
+      <div className={styles.btnBlock}>{numbers}
+        <Equals counts={props.counts} setCounts={props.setCounts} setResult={props.setResult} />
+      </div>
+    </div>
   )
 }
 

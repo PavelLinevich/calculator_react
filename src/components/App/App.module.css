@@ -1,6 +1,10 @@
 .container {
-
+  display: inline-block;
   margin: 3rem auto;
+  padding: 0.5rem;
+  border: 2px solid grey;
+  border-radius: 0.5rem;
+  background-color: #ebebeb;
 }
 
 .calculator {
@@ -13,7 +17,8 @@
 .screen {
   width: 21.5rem;
   padding: 0 1rem;
-  background-color: #f1f0f0;
+  background-color: #ffffff;
+  border: 2px solid grey;
   border-radius: 0.5rem;
   font-size: 3rem;
 }

@@ -19,8 +19,8 @@ function App() {
           </div>
         </div>
         <div className={styles.keyboard}>
-          <Numbers counts={counts} onClick={setCounts} />
-          <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult}/>
+          <Numbers counts={counts} setCounts={setCounts} setResult={setResult} />
+          <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult} />
         </div>
       </div>
     </div>
