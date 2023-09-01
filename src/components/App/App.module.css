@@ -31,10 +31,3 @@
 .keyboard {
   display: flex;
 }
-
-.expressionBtn {
-  display: flex;
-  flex-direction: column;
-  padding-left: 0.5rem;
-  gap: 0.5rem;
-}

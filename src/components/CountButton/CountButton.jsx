@@ -11,7 +11,7 @@ function CountButton(props) {
       props.onClick(props.counts + props.expression)
   }
   return (
-    <div className={styles.btn} onClick={() => { checkExpressionType() }}>{props.expression}</div>
+    <div className={styles.btn + ' ' + styles.expression} onClick={() => { checkExpressionType() }}>{props.expression}</div>
   )
 }
 

@@ -1,16 +1,11 @@
 import React, { useState } from 'react';
 import Numbers from '../Numbers/Numbers';
-import CountButton from '../CountButton/CountButton';
+import ExpressionButtons from '../ExpressionButtons/ExpressionButtons';
 import styles from './App.module.css';
 
 function App() {
   const [counts, setCounts] = useState('0');
   const [result, setResult] = useState('');
-
-  function applyExpression(countedNumber) {
-    setCounts(countedNumber);
-    setResult(eval(counts));
-  }
 
   return (
     <div className={styles.container}>
@@ -25,12 +20,7 @@ function App() {
         </div>
         <div className={styles.keyboard}>
           <Numbers counts={counts} onClick={setCounts} />
-          <div className={styles.expressionBtn}>
-            <CountButton counts={counts} setCounts={setCounts} expression={'/'} onClick={applyExpression} />
-            <CountButton counts={counts} setCounts={setCounts} expression={'*'} onClick={applyExpression} />
-            <CountButton counts={counts} setCounts={setCounts} expression={'-'} onClick={applyExpression} />
-            <CountButton counts={counts} setCounts={setCounts} expression={'+'} onClick={applyExpression} />
-          </div>
+          <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult}/>
         </div>
       </div>
     </div>
