@@ -1,4 +1,5 @@
 import React from 'react';
+import commonStyles from '../../commonStyles.module.css';
 import styles from './CountButton.module.css';
 
 function CountButton(props) {
@@ -11,7 +12,7 @@ function CountButton(props) {
       props.onClick(props.counts + props.expression)
   }
   return (
-    <div className={styles.btn + ' ' + styles.expression} onClick={() => { checkExpressionType() }}>{props.expression}</div>
+    <div className={commonStyles.btn + ' ' + styles.expression} onClick={() => { checkExpressionType() }}>{props.expression}</div>
   )
 }
 
