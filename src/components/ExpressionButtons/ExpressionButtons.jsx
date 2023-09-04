@@ -1,6 +1,6 @@
 import React from 'react';
 import CountButton from '../CountButton/CountButton';
-import styles from './ExpressionButtons.module.css'
+import styles from './ExpressionButtons.module.css';
 
 function ExpressionButtons(props) {
 
@@ -21,4 +21,4 @@ function ExpressionButtons(props) {
   )
 }
 
-export default ExpressionButtons
+export default ExpressionButtons;
