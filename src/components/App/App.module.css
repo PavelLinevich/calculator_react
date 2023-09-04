@@ -21,6 +21,7 @@
   border: 2px solid grey;
   border-radius: 0.5rem;
   font-size: 3rem;
+  word-break:break-all;
 }
 
 .counts {
