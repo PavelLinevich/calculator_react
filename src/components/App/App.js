@@ -21,7 +21,7 @@ function App() {
         </div>
         <div className={styles.keyboard}>
           <ClearButton />
-          <div>
+          <div className={styles.keyboardContainer}>
             <Numbers counts={counts} setCounts={setCounts} setResult={setResult} />
             <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult} />
           </div>

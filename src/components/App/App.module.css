@@ -36,4 +36,9 @@
 
 .keyboard {
   display: flex;
+  flex-direction: column;
+}
+
+.keyboardContainer {
+  display: flex;
 }

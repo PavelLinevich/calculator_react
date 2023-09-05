@@ -4,7 +4,7 @@ import styles from './ClearButton.module.css';
 
 function ClearButton() {
   return (
-    <div>
+    <div className={styles.clearButtonContainer}>
       <div className={commonStyles.btn + ' ' + styles.clearButton}>
         AC
       </div>

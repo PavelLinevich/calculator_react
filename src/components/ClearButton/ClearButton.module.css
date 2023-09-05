@@ -1,3 +1,11 @@
+.clearButtonContainer {
+  display: flex;
+  padding: 0.5rem 0;
+  gap: 0.5rem;
+}
+
 .clearButton {
+  width: 10.5rem;
+  align-items: normal;
   background-color: darkgreen;
 }
