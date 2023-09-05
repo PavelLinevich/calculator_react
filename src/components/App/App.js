@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import Numbers from '../Numbers/Numbers';
 import ExpressionButtons from '../ExpressionButtons/ExpressionButtons';
+import ClearButton from '../ClearButton/ClearButton';
 import styles from './App.module.css';
 
 function App() {
@@ -19,8 +20,11 @@ function App() {
           </div>
         </div>
         <div className={styles.keyboard}>
-          <Numbers counts={counts} setCounts={setCounts} setResult={setResult} />
-          <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult} />
+          <ClearButton />
+          <div>
+            <Numbers counts={counts} setCounts={setCounts} setResult={setResult} />
+            <ExpressionButtons counts={counts} setCounts={setCounts} setResult={setResult} />
+          </div>
         </div>
       </div>
     </div>
